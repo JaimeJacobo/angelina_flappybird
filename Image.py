@@ -20,3 +20,6 @@ class Image:
 
     def reset_y(self):
         self.y = random.randint(250, 380)
+
+    def reset_upper_pipe_y(self, lower_pipe_y, s):
+        self.y = lower_pipe_y - self.height - s
